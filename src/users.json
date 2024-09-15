@@ -1,0 +1,50 @@
+[
+    {
+        "firstname": "Danil",
+        "lastname": "Pristupa",
+        "src": "",
+        "age": 17,
+        "city": "Запоріжжя",
+        "phoneNumber": "+380453123223"
+    },
+    {
+        "firstname": "Maria",
+        "lastname": "Kovalenko",
+        "src": "https://i.pinimg.com/736x/0e/1b/03/0e1b03e7829a8d32faa3e859cbd12b11.jpg",
+        "age": 21,
+        "city": "",
+        "phoneNumber": ""
+    },
+    {
+        "firstname": "Oleg",
+        "lastname": "Tsymbal",
+        "src": "https://thumbs.wbm.im/pw/small/336a6c30284d044e0cb5834b5360f39a.jpg",
+        "age": 18,
+        "city": "Чернівці",
+        "phoneNumber": ""
+    },
+    {
+        "firstname": "Artem",
+        "lastname": "Tsymbal",
+        "src": "",
+        "age": 18,
+        "city": "",
+        "phoneNumber": "+380455563223"
+    },
+    {
+        "firstname": "Daniil",
+        "lastname": "Saenko",
+        "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvakm_zio2J6a-PadL8SE6DjgZOB_5FlJz3w&ss",
+        "age": 18,
+        "city": "Запоріжжя",
+        "phoneNumber": "+380423231559"
+    },
+    {
+        "firstname": "Artem",
+        "lastname": "Luhovsky",
+        "src": "",
+        "age": 18,
+        "city": "Вінниця",
+        "phoneNumber": "+380433376980"
+    }
+]

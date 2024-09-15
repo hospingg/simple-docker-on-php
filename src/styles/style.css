@@ -1,0 +1,160 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    --profile-img-size-bigger: 220px;
+    --profile-img-size: 120px;
+    --profile-friend-list-img-size: 30px;
+    --background-color: #e6e6e6;
+    --backround-profile-color: #FFFF;
+    --dark-gray-color: #333;
+    --banner-height: 220px;
+    --banner-padding: calc(var(--profile-img-size)/-4);
+
+    font-size: 16px;
+}
+.user-name{
+    font-size: 1.25em;
+    margin: 5px 0;
+}
+.banner{
+    width: 100%;
+    height: var(--banner-height);
+    background-color: var(--dark-gray-color);
+    margin-bottom: var(--banner-padding);
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0 20vw;
+    padding: 0;
+    background-color: var(--background-color);
+}
+body > *{
+    background-color: var(--backround-profile-color);
+}
+.more-info-coll{
+    text-align: right;
+}
+.fa-solid{
+    color:var(--dark-gray-color);
+    margin-left: 10px;
+}
+tr{
+    border-collapse: separate;
+    border-spacing: 2px;
+}
+.user-profile-info span{
+    color: var(--dark-gray-color);
+    font-weight: 500;
+    font-size: 0.75em;
+}
+h1 {
+    color: var(--dark-gray-color);
+}
+.profile-img{
+    margin-top: var(--banner-padding);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.profile-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: calc(var(--banner-padding) * -1) 40px;
+    width: 100%;
+}
+.friends-table-img{
+    border: 1px solid #bebebe;
+    height: var(--profile-img-size);
+    width: var(--profile-img-size);
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+.table-name{
+    font-size: 1.2em;
+}
+
+.profile-img{
+    width: var(--profile-img-size);
+    height: var(--profile-img-size);
+}
+ul{
+    padding: 0;
+}
+li{
+    list-style: none;
+}
+
+td:first-child{
+    width: 20px;
+}
+img{
+    object-fit: cover;
+}
+
+.profile-container img{
+    border-radius: 50%; 
+    border: 4px solid var(--backround-profile-color);
+    
+}
+.user-profile-info{
+    margin-right: auto;
+    margin-left: 1em;
+}
+.user-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: left;
+    flex-wrap: nowrap;
+    overflow-x: auto; /* Додає горизонтальну прокрутку, якщо потрібно */
+}
+
+.friend-card-list {
+    position: relative;
+    display: inline-block;
+    margin-right: calc(var(--profile-friend-list-img-size) / -4);
+}
+
+.friend-list-img {
+    width: var(--profile-friend-list-img-size);
+    height: var(--profile-friend-list-img-size); 
+    display: block;
+    
+}
+.about-me{
+    border: 1px solid gray;
+}
+.wrapper{
+    
+    padding: 10px 50px;
+}
+.friends-table-list{
+    width: 100%;
+    text-align: center;
+}
+
+
+@media screen and (max-width:1024px) {
+    body{
+        margin: 0;
+    }
+    .profile-container{
+        flex-direction: column;
+    }
+    .user-profile-info{
+        margin: 0;
+        text-align: center;
+    }
+    .user-list{
+        justify-content: center;
+    }
+    .profile-img{
+        height: var(--profile-img-size-bigger);
+        width: var(--profile-img-size-bigger);
+    }
+}
